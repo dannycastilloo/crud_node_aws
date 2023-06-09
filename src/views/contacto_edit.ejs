@@ -1,0 +1,32 @@
+<% include partials/_header %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/update/<%= data.id %>" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" value="<%= data.name %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastName" value="<%= data.lastName %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="email" value="<%= data.email %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="birthday" value="<%= data.birthday %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" name="photo" value="<%= data.photo %>"class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include partials/_footer %>
