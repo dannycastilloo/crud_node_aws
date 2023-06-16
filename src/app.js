@@ -18,10 +18,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
     host: 'localhost',
-    user: 'root',
+    user: '',
     password: '',
-    port: 3306,
-    database: 'crudnodejsmysql'
+    port: ,
+    database: ''
 }, 'single'));
 app.use(express.urlencoded({extended:false}));
 
